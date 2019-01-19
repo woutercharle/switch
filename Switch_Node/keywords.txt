@@ -1,0 +1,11 @@
+Switch KEYWORD1
+Node KEYWORD1
+Dimmer KEYWORD1
+Configuration KEYWORD1
+Begin KEYWORD2
+Update KEYWORD2
+IsConnected KEYWORD2
+GetNrRxMessagesQueued KEYWORD2
+GetRxMessage KEYWORD2
+ReleaseRxMessage KEYWORD2
+FlushRxMessageQueue KEYWORD2

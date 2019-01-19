@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="Switch_Base/Switch_Base.cbp" />
+		<Project filename="Switch_Parameters/Switch_Parameters.cbp">
+			<Depends filename="Switch_Serialization/Switch_Serialization.cbp" />
+		</Project>
+		<Project filename="Switch_Application/Switch_Application.cbp">
+			<Depends filename="Switch_Parameters/Switch_Parameters.cbp" />
+		</Project>
+		<Project filename="Switch_Device/Switch_Device.cbp">
+			<Depends filename="Switch_Parameters/Switch_Parameters.cbp" />
+			<Depends filename="Switch_Application/Switch_Application.cbp" />
+			<Depends filename="Switch_Serialization/Switch_Serialization.cbp" />
+		</Project>
+		<Project filename="Switch_Network/Switch_Network.cbp" />
+		<Project filename="Switch_Node/Switch_Node.cbp" />
+		<Project filename="Switch_Serialization/Switch_Serialization.cbp" />
+		<Project filename="Switch_Router/Switch_Router.cbp">
+			<Depends filename="Switch_Base/Switch_Base.cbp" />
+			<Depends filename="Switch_Parameters/Switch_Parameters.cbp" />
+			<Depends filename="Switch_Application/Switch_Application.cbp" />
+			<Depends filename="Switch_Network/Switch_Network.cbp" />
+		</Project>
+		<Project filename="Switch_Controller/Switch_Controller.cbp">
+			<Depends filename="Switch_Parameters/Switch_Parameters.cbp" />
+			<Depends filename="Switch_Application/Switch_Application.cbp" />
+			<Depends filename="Switch_Device/Switch_Device.cbp" />
+			<Depends filename="Switch_Router/Switch_Router.cbp" />
+		</Project>
+		<Project filename="Switch_Http/Switch_Http.cbp" />
+		<Project filename="../Projects/Switch_Tests/Switch_Tests.cbp" />
+		<Project filename="../Projects/Switch/Switch.cbp" />
+		<Project filename="../Projects/CppCmsTest/CppCmsTest.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

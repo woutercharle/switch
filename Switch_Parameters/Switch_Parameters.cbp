@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Switch_Parameters" />
+		<Option platforms="Unix;" />
+		<Option pch_mode="2" />
+		<Option compiler="armelfgcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="../../../Libraries/$(TARGET_NAME)/Switch_Parameters" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="staging/$(TARGET_NAME)/" />
+				<Option type="2" />
+				<Option compiler="armelfgcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Wredundant-decls" />
+					<Add option="-Wcast-align" />
+					<Add option="-Wundef" />
+					<Add option="-Wfloat-equal" />
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wmissing-declarations" />
+					<Add option="-Wmissing-include-dirs" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wswitch-default" />
+					<Add option="-Wall" />
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-mfpu=vfp -mfloat-abi=hard -mtune=arm1176jzf-s -std=c++11" />
+					<Add option="-D_DEBUG" />
+					<Add directory="../../Thirdparty/jsoncpp/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="release">
+				<Option output="../../../Libraries/$(TARGET_NAME)/Switch_Parameters" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="staging/$(TARGET_NAME)/" />
+				<Option type="2" />
+				<Option compiler="armelfgcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-mfpu=vfp -mfloat-abi=hard -mtune=arm1176jzf-s" />
+					<Add option="-DNDEBUG" />
+					<Add directory="../../Thirdparty/jsoncpp/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Switch_Parameter.cpp" />
+		<Unit filename="Switch_Parameter.h" />
+		<Unit filename="Switch_ParameterContainer.cpp" />
+		<Unit filename="Switch_ParameterContainer.h" />
+		<Unit filename="Switch_ParameterizedObject.cpp" />
+		<Unit filename="Switch_ParameterizedObject.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

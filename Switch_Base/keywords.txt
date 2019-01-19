@@ -1,0 +1,46 @@
+#######################################
+# Syntax Coloring Map For TimerOne
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Switch                         KEYWORD1
+TimerOne                       KEYWORD1
+Node                           KEYWORD1
+NetworkMessage                 KEYWORD1
+BroadcastPayload               KEYWORD1
+NodeAssignmentPayload          KEYWORD1
+PingPongPayload                KEYWORD1
+Configuration                  KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+Begin                          KEYWORD2
+Update                         KEYWORD2
+IsConnected                    KEYWORD2
+GetNrRxMessagesQueued          KEYWORD2
+GetRxMessage                   KEYWORD2
+ReleaseRxMessage               KEYWORD2
+FlushRxMessageQueue            KEYWORD2
+initialize                     KEYWORD2
+start                          KEYWORD2
+stop                           KEYWORD2
+restart                        KEYWORD2
+resume                         KEYWORD2
+read                           KEYWORD2
+pwm                            KEYWORD2
+disablePwm                     KEYWORD2
+attachInterrupt                KEYWORD2
+detachInterrupt                KEYWORD2
+setPeriod                      KEYWORD2
+setPwmDuty                     KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+

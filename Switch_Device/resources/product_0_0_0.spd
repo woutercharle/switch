@@ -1,0 +1,57 @@
+
+{
+	"brand" : "Switch", // The brand of the device.
+	"dataFormat" : 
+	{
+		"adapters" : 
+		[
+			
+			{
+				"bitOffset" : 0, // The index of the first bit. Ordered from right (small indices) to left (large indices). Values 0 to 7.
+				"bitSize" : 4, // The data length in bits, starting from the bit at m_bitOffset in m_pData.
+				"description" : "Val0 description", // A description of the data object.
+				"group" : "Values", // The name of the group this type of adapter belongs to.
+				"maxValue" : 8, // The maximum data value.
+				"minValue" : 1, // The minimum data value.
+				"name" : "Val0" // The name of the data object.
+			},
+			
+			{
+				"bitOffset" : 4, // The index of the first bit. Ordered from right (small indices) to left (large indices). Values 0 to 7.
+				"bitSize" : 6, // The data length in bits, starting from the bit at m_bitOffset in m_pData.
+				"description" : "Val1 description", // A description of the data object.
+				"group" : "Values", // The name of the group this type of adapter belongs to.
+				"maxValue" : 32, // The maximum data value.
+				"minValue" : 1, // The minimum data value.
+				"name" : "Val1" // The name of the data object.
+			}
+		], // Array of data formats of data adapters contained by this container.
+		"description" : "Description of the data format of test device", // A description of the content of the container object.
+		"name" : "TestDataFormat", // The name of the container object.
+		"subContainers" : 
+		[
+			
+			{
+				"adapters" : 
+				[
+					
+					{
+						"bitOffset" : 2, // The index of the first bit. Ordered from right (small indices) to left (large indices). Values 0 to 7.
+						"bitSize" : 14, // The data length in bits, starting from the bit at m_bitOffset in m_pData.
+						"description" : "Val0 description", // A description of the data object.
+						"group" : "Values", // The name of the group this type of adapter belongs to.
+						"maxValue" : 16383, // The maximum data value.
+						"minValue" : 1, // The minimum data value.
+						"name" : "Val0" // The name of the data object.
+					}
+				], // Array of data formats of data adapters contained by this container.
+				"description" : "Description of the data format of the nested container in the test device", // A description of the content of the container object.
+				"name" : "TestNestedDataFormat", // The name of the container object.
+				"subContainers" : [] // Array of data formats of nested data containers.
+			}
+		] // Array of data formats of nested data containers.
+	}, // The format of data used by the device.
+	"productId" : 0, // The id of the product the device.
+	"productName" : "TestDevice", // The name of the product.
+	"productVersion" : 0 // The version of the product.
+}

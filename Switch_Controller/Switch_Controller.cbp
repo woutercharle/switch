@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Switch_Controller" />
+		<Option platforms="Unix;" />
+		<Option pch_mode="2" />
+		<Option compiler="armelfgcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="../../../Libraries/$(TARGET_NAME)/Switch_Controller" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="staging/$(TARGET_NAME)/" />
+				<Option type="2" />
+				<Option compiler="armelfgcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-mfpu=vfp -mfloat-abi=hard -mtune=arm1176jzf-s" />
+					<Add option="-D_DEBUG" />
+					<Add directory="../../Thirdparty/jsoncpp/include" />
+					<Add directory="../../Thirdparty/boost/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="release">
+				<Option output="../../../Libraries/$(TARGET_NAME)/Switch_Controller" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="staging/$(TARGET_NAME)/" />
+				<Option type="2" />
+				<Option compiler="armelfgcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++11" />
+					<Add option="-Wall" />
+					<Add option="-mfpu=vfp -mfloat-abi=hard -mtune=arm1176jzf-s" />
+					<Add option="-DNDEBUG" />
+					<Add directory="../../Thirdparty/jsoncpp/include" />
+					<Add directory="../../Thirdparty/boost/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Switch_Controller.cpp" />
+		<Unit filename="Switch_Controller.h" />
+		<Unit filename="Switch_ControllerFunctionalFacade.cpp" />
+		<Unit filename="Switch_ControllerFunctionalFacade.h" />
+		<Unit filename="Switch_ControllerFunctionalInterface.h" />
+		<Unit filename="Switch_Controller_Tests.h" />
+		<Unit filename="Switch_InterfaceDevice.cpp" />
+		<Unit filename="Switch_InterfaceDevice.h" />
+		<Unit filename="Switch_InterfaceTranslations.cpp" />
+		<Unit filename="Switch_InterfaceTranslations.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
